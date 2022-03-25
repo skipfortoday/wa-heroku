@@ -16,7 +16,7 @@ venom
       console.log("Session name: ", session);
     },
     {
-      puppeteerOptions: { args: ["--no-sandbox"] }, // Will be passed to puppeteer.launch
+      puppeteerOptions: { args: ["--no-sandbox", "--disable-setuid-sandbox"] }, // Will be passed to puppeteer.launch
     }
   )
   .then((client) => {
